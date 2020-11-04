@@ -9,9 +9,10 @@ int main(){
   while(! infile.eof()){
     infile >> a >> b;
     outfile << a+b << std::endl;
+    std::cout << a+b << std::endl;
+
   }  
 
   infile.close();
   outfile.close();
 }
-
