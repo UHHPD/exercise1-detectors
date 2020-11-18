@@ -7,11 +7,11 @@ double meanvalue(std::string filename){
   double mean = 0;
   int N = 0;
   double a;
-
-  while(! file.eof()){
-    file >> a ;
+file >> a ;
+  while(! file.eof()){    
     mean = mean + a;
     ++N;
+    file >> a ;
   }  
   mean = mean / N ;
   file.close();
@@ -23,11 +23,11 @@ double variance(std::string filename, double mu){
   double var = 0;
   int N = 0;
   double a;
-
+file >> a ;
   while(! file.eof()){
-    file >> a ;
     var = var + (a - mu)*(a - mu);
     ++N;
+    file >> a ;
   }  
   var = var / N ;
   file.close();
