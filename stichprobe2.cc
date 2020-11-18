@@ -77,10 +77,11 @@ variance_nine("datensumme.txt","varianzen.txt", "mittelwerte.txt");
 
 double meanmean = meanvalue("mittelwerte.txt");
 double varmean = meanvalue("varianzen.txt");
-std::cout << meanmean << std::endl;
-std::cout << varmean << std::endl;
+
+//std::cout << meanmean << std::endl;
+//std::cout << varmean << std::endl;
 double besselvar = varmean *26/25;
-std::cout << besselvar << std::endl;
+//std::cout << besselvar << std::endl;
 
 }
 
