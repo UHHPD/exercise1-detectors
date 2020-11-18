@@ -73,13 +73,13 @@ double meanvalue(std::string filename){
 int main(){
 meanvalue_nine("datensumme.txt","mittelwerte.txt");
 variance_nine("datensumme.txt","varianzen.txt", "mittelwerte.txt");
-std::cout << "habe fertig" << std::endl;
+//std::cout << "habe fertig" << std::endl;
 
 double meanmean = meanvalue("mittelwerte.txt");
 double varmean = meanvalue("varianzen.txt");
 std::cout << meanmean << std::endl;
 std::cout << varmean << std::endl;
-double besselvar = varmean *234/233;
+double besselvar = varmean *26/25;
 std::cout << besselvar << std::endl;
 
 }
